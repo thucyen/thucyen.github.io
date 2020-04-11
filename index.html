@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Project: Blog</title>
-        <style>
-            html{
-            background-color: rgb(255,255,255);
-            body{ 
+
+<head>
+    <meta charset="utf-8">
+    <title>Project: Blog</title>
+    <style>
+        html {
+            background-color: rgb(255, 255, 255);
+        }
+
+        body {
             padding-left: 40px;
             padding-right: 50px;
             padding-top: 20px;
             padding-bottom: 20px;
-            font-family:  "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
             font-size: 20px;
-            background-color: rgb(245,244,249);
+            background-color: rgb(245, 244, 249);
             color: rgb(242, 106, 138);
             width: 960px;
             margin: 0 auto;
         }
+
         h1 {
             font-weight: 600;
             font-size: 39px;
-            color: rgb(248,8,81);
+            color: rgb(248, 8, 81);
 
         }
+
         h2 {
-            color: rgb(2,146,232);
+            color: rgb(2, 146, 232);
             font-size: 1.5rem;
             font-weight: 400;
             text-decoration: underline;
         }
+
         h3 {
             font-weight: bold;
             font-style: italic;
             font-size: 3rem;
-            color: rgb(239,156,174);
+            color: rgb(239, 156, 174);
             grid-row: 1 / 2;
             grid-column: 1 / 4;
         }
+
         .ingredient {
             border-style: dashed;
             border-color: rgb(199, 108, 199);
-            box-shadow: 12px 12px 2px 1px rgba(2,146,232, .2);
+            box-shadow: 12px 12px 2px 1px rgba(2, 146, 232, .2);
             background-color: rgb(245, 228, 245);
             padding-left: 20px;
             padding-top: 10px;
@@ -54,8 +61,9 @@
             box-sizing: border-box;
             margin-right: 8px;
         }
+
         .how-to-make {
-            background-color: rgb(255,2555,255);
+            background-color: rgb(255, 2555, 255);
             padding-left: 50px;
             padding-right: 50px;
             padding-top: 40px;
@@ -63,65 +71,76 @@
             line-height: 1.5;
             grid-column: 1 /2;
             grid-row: 3 / 5;
-}
+        }
+
         .how-to-make p {
             margin: 0;
         }
+
         .how-to-make p+p {
             margin-top: 1rem;
         }
+
         .ingredient td {
             padding: 0 1rem;
         }
+
         .ingredient thead {
             text-decoration: underline;
         }
-       article {
-           display: grid;
-           grid-template-columns: 60% 20% 20%;
-           grid-template-rows: repeat(4, min-content);
-           grid-gap: 1.5rem;
-       }
-       #source {
-           text-align: right;
-       }
+
+        article {
+            display: grid;
+            grid-template-columns: 60% 20% 20%;
+            grid-template-rows: repeat(4, min-content);
+            grid-gap: 1.5rem;
+        }
+
+        #source {
+            text-align: right;
+        }
+
         .photo {
             width: 8%;
             grid-column: 1 / 4;
             justify-self: center;
-       }
+        }
+
         .note {
             grid-row: 3 / 4;
-                }
-        </style>
-        
-    </head>
-    <body>
-        
-        <h1>Thuc Yen's Food blog</h1>
+        }
+    </style>
 
-        <h2>Contents</h2>
-        <ol>
-            <li><a href="#lemon-buttermilk-cake">Lemon-Buttermilk  Cake</a></li>
-           <li><a href="#cottage-pudding">Cottage Pudding</a></li>
-            <li><a href="#apple-pie">Apple Pie</a></li>
-           
-        </ol>
-        <h2>My collection</h2>
-        
-         <!-------------RECIPE 1 ------------>
-        <article>
+</head>
+
+<body>
+
+    <h1>Thuc Yen's Food blog</h1>
+
+    <h2>Contents</h2>
+    <ol>
+        <li><a href="#lemon-buttermilk-cake">Lemon-Buttermilk Cake</a></li>
+        <li><a href="#cottage-pudding">Cottage Pudding</a></li>
+        <li><a href="#apple-pie">Apple Pie</a></li>
+
+    </ol>
+    <h2>My collection</h2>
+
+    <!-------------RECIPE 1 ------------>
+    <article>
         <h3 id="lemon-buttermilk-cake">Recipe #1: Lemon Buttermilk Pound Cake</h3>
-        
-       <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Lemon_bundt_cake_%282%29%2C_January_2010.jpg" alt="butter=cake">
-        
-        <ul class = "note">
+
+        <img class="photo"
+            src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Lemon_bundt_cake_%282%29%2C_January_2010.jpg"
+            alt="butter=cake">
+
+        <ul class="note">
             <li>Prep: 20 mins</li>
             <li>Cook: 1 hr</li>
             <li>Serves: 12</li>
         </ul>
-        
-        <table class = "ingredient">
+
+        <table class="ingredient">
             <thead>
                 <tr>
                     <th>Ingredients</th>
@@ -145,35 +164,46 @@
                     <td>All purpose flour</td>
                     <td>3.5 cups</td>
                 </tr>
-                 <tr>
+                <tr>
                     <td>Salt</td>
                     <td>1.5 teaspoon</td>
                 </tr>
             </tbody>
         </table>
-        
+
         <div class="how-to-make">
-        <p><strong>Step 1:</strong> Preheat oven to 350 degrees F (175 degrees C). Grease and flour a fluted tube pan.</p>
-        <p><strong>Step 2:</strong> Beat white sugar and 1 1/2 cups butter together in a bowl with an electric mixer until light and fluffy, about 10 minutes. Add eggs one at a time, thoroughly beating each egg into the butter mixture before adding the next.</p>
-        <p><strong>Step 3:</strong> Sift flour, salt, and baking soda together in a bowl. Add 1/3 of the flour mixture to the butter mixture; mix well. Pour in 1/2 the buttermilk and beat until combined. Repeat adding the remaining flour mixture and buttermilk, beating well after each addition, and ending with the flour mixture. Stir lemon extract into batter. Pour batter into prepared tube pan.</p>
-        <p><strong>Step 4:</strong> Reduce oven temperature to 325 degrees F (165 degrees C).</p>
-        <p><strong>Step 5:</strong> Bake in the oven until a toothpick inserted into the center of the cake comes out clean, 60 to 75 minutes. Cool in the pan for 10 minutes before removing to a cake platter or plate.</p>
-        <p><strong>Step 6:</strong> Beat confectioner's sugar, lemon juice, 2 tablespoons butter, and lemon zest together in a bowl until glaze is smooth. Pour about half the glaze over the cake; let cool. Pour remaining glaze over the cake.</p>
-</div>
+            <p><strong>Step 1:</strong> Preheat oven to 350 degrees F (175 degrees C). Grease and flour a fluted tube
+                pan.</p>
+            <p><strong>Step 2:</strong> Beat white sugar and 1 1/2 cups butter together in a bowl with an electric mixer
+                until light and fluffy, about 10 minutes. Add eggs one at a time, thoroughly beating each egg into the
+                butter mixture before adding the next.</p>
+            <p><strong>Step 3:</strong> Sift flour, salt, and baking soda together in a bowl. Add 1/3 of the flour
+                mixture to the butter mixture; mix well. Pour in 1/2 the buttermilk and beat until combined. Repeat
+                adding the remaining flour mixture and buttermilk, beating well after each addition, and ending with the
+                flour mixture. Stir lemon extract into batter. Pour batter into prepared tube pan.</p>
+            <p><strong>Step 4:</strong> Reduce oven temperature to 325 degrees F (165 degrees C).</p>
+            <p><strong>Step 5:</strong> Bake in the oven until a toothpick inserted into the center of the cake comes
+                out clean, 60 to 75 minutes. Cool in the pan for 10 minutes before removing to a cake platter or plate.
+            </p>
+            <p><strong>Step 6:</strong> Beat confectioner's sugar, lemon juice, 2 tablespoons butter, and lemon zest
+                together in a bowl until glaze is smooth. Pour about half the glaze over the cake; let cool. Pour
+                remaining glaze over the cake.</p>
+        </div>
     </article>
-     <!-------------RECIPE 2 ------------>
-      <article>  
-      <h3 id="cottage-pudding">Recipe #2: Cottage Pudding</h3>
-        
-       <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Griessbrei.jpg" alt="cottage-pudding">
-        
-        <ul class = "note">
+    <!-------------RECIPE 2 ------------>
+    <article>
+        <h3 id="cottage-pudding">Recipe #2: Cottage Pudding</h3>
+
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Griessbrei.jpg"
+            alt="cottage-pudding">
+
+        <ul class="note">
             <li>Prep: 10 mins</li>
             <li>Cook: 25 mins</li>
             <li>Serves: 9</li>
         </ul>
-        
-        <table class = "ingredient">
+
+        <table class="ingredient">
             <thead>
                 <tr>
                     <th>Ingredients</th>
@@ -181,7 +211,7 @@
                 </tr>
             </thead>
             <tbody>
-                
+
                 <tr>
                     <td>All purpose flour</td>
                     <td>2 cups</td>
@@ -198,36 +228,41 @@
                     <td>White Sugar</td>
                     <td> 2 cups</td>
                 </tr>
-                 <tr>
+                <tr>
                     <td>Salt</td>
                     <td>0.5 teaspoon</td>
                 </tr>
-                 <tr>
+                <tr>
                     <td>Large eggs</td>
                     <td>5</td>
                 </tr>
             </tbody>
         </table>
-        
+
         <div class="how-to-make">
-        <p><strong>Step 1:</strong> Preheat an oven to 350 degrees F (175 degrees C). Grease a 9-inch square cake pan. Whisk the flour, baking powder, and salt together in a bowl; set aside.</p>
-        <p><strong>Step 2:</strong> Beat the shortening and sugar with an electric mixer in a large bowl until light and fluffy. Beat in the egg and vanilla extract until smooth. Pour in the flour mixture alternately with the milk, mixing until just incorporated. Pour the batter into prepared pan.</p>
-        <p><strong>Step 3:</strong> Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 25 minutes. Cool in the pans for 10 minutes before removing to cool completely on a wire rack.</p>
+            <p><strong>Step 1:</strong> Preheat an oven to 350 degrees F (175 degrees C). Grease a 9-inch square cake
+                pan. Whisk the flour, baking powder, and salt together in a bowl; set aside.</p>
+            <p><strong>Step 2:</strong> Beat the shortening and sugar with an electric mixer in a large bowl until light
+                and fluffy. Beat in the egg and vanilla extract until smooth. Pour in the flour mixture alternately with
+                the milk, mixing until just incorporated. Pour the batter into prepared pan.</p>
+            <p><strong>Step 3:</strong> Bake in the preheated oven until a toothpick inserted into the center comes out
+                clean, about 25 minutes. Cool in the pans for 10 minutes before removing to cool completely on a wire
+                rack.</p>
         </div>
-    </article>    
-     <!-------------RECIPE 3 ------------>
-      <article>
+    </article>
+    <!-------------RECIPE 3 ------------>
+    <article>
         <h3 id="apple-pie">Recipe #3: Apple Pie</h3>
-        
-       <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Apple_pie.jpg" alt="apple-pie-cake">
-        
-        <ul class = "note">
+
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Apple_pie.jpg" alt="apple-pie-cake">
+
+        <ul class="note">
             <li>Prep: 20 mins</li>
             <li>Cook: 40 mins</li>
             <li>Serves: 8</li>
         </ul>
-        
-        <table class = "ingredient">
+
+        <table class="ingredient">
             <thead>
                 <tr>
                     <th>Ingredients</th>
@@ -235,7 +270,7 @@
                 </tr>
             </thead>
             <tbody>
-                
+
                 <tr>
                     <td>Thinly sliced apples</td>
                     <td>6 cups</td>
@@ -252,24 +287,30 @@
                     <td>White Sugar</td>
                     <td> 0.75 cups</td>
                 </tr>
-                 <tr>
+                <tr>
                     <td>Salt</td>
                     <td>0.5 teaspoon</td>
                 </tr>
-                 <tr>
+                <tr>
                     <td>9-inch double-crust pie</td>
                     <td>1 recipe</td>
                 </tr>
             </tbody>
         </table>
-        
+
         <div class="how-to-make">
-        <p><strong>Step 1:</strong> Prepare your pastry for a two crust pie. Wipe, quarter, core, peel, and slice apples; measure to 6 cups.</p>
-        <p><strong>Step 2:</strong> Combine sugar and cinnamon. The amount of sugar used depends on how tart your apples are.</p>
-        <p><strong>Step 3:</strong> Arrange apples in layers in pastry lined pie plate. Sprinkle each layer with sugar and cinnamon. Dot top layer with small pieces of butter or margarine. Cover with top crust.</p>
-        <p><strong>Step 4:</strong> Place on lowest rack in oven preheated to 450 degrees F (230 degrees C). Bake for 10 minutes, then reduce oven temperature to 350 degrees F (175 degrees C). Bake for 30 to 35 minutes longer. Serve warm or cold.</p>
+            <p><strong>Step 1:</strong> Prepare your pastry for a two crust pie. Wipe, quarter, core, peel, and slice
+                apples; measure to 6 cups.</p>
+            <p><strong>Step 2:</strong> Combine sugar and cinnamon. The amount of sugar used depends on how tart your
+                apples are.</p>
+            <p><strong>Step 3:</strong> Arrange apples in layers in pastry lined pie plate. Sprinkle each layer with
+                sugar and cinnamon. Dot top layer with small pieces of butter or margarine. Cover with top crust.</p>
+            <p><strong>Step 4:</strong> Place on lowest rack in oven preheated to 450 degrees F (230 degrees C). Bake
+                for 10 minutes, then reduce oven temperature to 350 degrees F (175 degrees C). Bake for 30 to 35 minutes
+                longer. Serve warm or cold.</p>
         </div>
     </article>
     <p id="source"><em>Source: <a href="https://www.allrecipes.com/">allrecipes.com</a></em></p>
-    </body>
+</body>
+
 </html>
